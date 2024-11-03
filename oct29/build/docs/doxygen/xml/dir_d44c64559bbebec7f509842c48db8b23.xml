@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/Users/salehabdelrahman/Desktop/oct29/include</compoundname>
+    <innerfile refid="_arabic_8h">Arabic.h</innerfile>
+    <innerfile refid="_zip_f_8h">ZipF.h</innerfile>
+    <innerfile refid="_zip_f__2_8h">ZipF_2.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/salehabdelrahman/Desktop/oct29/include/"/>
+  </compounddef>
+</doxygen>

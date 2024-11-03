@@ -1,0 +1,38 @@
+\doxysection{/\+Users/salehabdelrahman/\+Desktop/oct29/homework/\+Arabic.cpp File Reference}
+\hypertarget{_arabic_8cpp}{}\label{_arabic_8cpp}\index{/Users/salehabdelrahman/Desktop/oct29/homework/Arabic.cpp@{/Users/salehabdelrahman/Desktop/oct29/homework/Arabic.cpp}}
+{\ttfamily \#include "{}../include/\+Arabic.\+h"{}}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacearabic}{arabic}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacearabic_a50889a2d84a5c057e2bf6ddae28b0336}{arabic\+::setup\+Locale}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the locale for UTF-\/8 output. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacearabic_a210b46af1b538d82819ebb328c8ff247}{arabic\+::is\+Arabic\+Alphabet}} (wchar\+\_\+t ch)
+\begin{DoxyCompactList}\small\item\em Checks if a character is an Arabic alphabet. \end{DoxyCompactList}\item 
+std\+::vector$<$ wchar\+\_\+t $>$ \mbox{\hyperlink{namespacearabic_ad75d43a508128cf3eb7773d1aafe8f1d}{arabic\+::read\+Book}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Reads a book from a specified file and extracts Arabic characters. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::wstring, int $>$ \mbox{\hyperlink{namespacearabic_a5b54cad27f1d77cd8d5ff625995699c5}{arabic\+::compute\+Word\+Frequency}} (const std\+::vector$<$ wchar\+\_\+t $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Computes the frequency of each word in the provided book. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacearabic_a92e5bccfce1e161adee7e0f5e9d583d6}{arabic\+::count\+Unique\+Words}} (const std\+::vector$<$ wchar\+\_\+t $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Counts the number of unique words in the provided book. \end{DoxyCompactList}\item 
+std\+::multimap$<$ int, std\+::wstring $>$ \mbox{\hyperlink{namespacearabic_abe1d7f6588a1fcf31a68cbca5e7a6d4a}{arabic\+::sort\+Frequencies}} (const std\+::map$<$ std\+::wstring, int $>$ \&frequencies)
+\begin{DoxyCompactList}\small\item\em Sorts word frequencies in descending order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacearabic_a97e992427ae79dc74f0a5c7ce8cb95f2}{arabic\+::export\+Frequencies\+To\+File}} (const std\+::multimap$<$ int, std\+::wstring $>$ \&sorted\+Freq, const std\+::string \&output\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Exports sorted word frequencies to a specified output file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacearabic_a343959a2c47a8bcb2a27a8b268722911}{arabic\+::print\+Hapax\+Legomena}} (const std\+::multimap$<$ int, std\+::wstring $>$ \&sorted\+Freq)
+\begin{DoxyCompactList}\small\item\em Prints hapax legomena from the sorted frequency data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_arabic_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_arabic_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_arabic_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{Arabic.cpp@{Arabic.cpp}!main@{main}}
+\index{main@{main}!Arabic.cpp@{Arabic.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

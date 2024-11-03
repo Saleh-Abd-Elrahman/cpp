@@ -1,0 +1,26 @@
+\doxysection{/\+Users/salehabdelrahman/\+Desktop/oct29/include/\+ZipF.h File Reference}
+\hypertarget{_zip_f_8h}{}\label{_zip_f_8h}\index{/Users/salehabdelrahman/Desktop/oct29/include/ZipF.h@{/Users/salehabdelrahman/Desktop/oct29/include/ZipF.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacezip_f}{zipF}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ char $>$ \mbox{\hyperlink{namespacezip_f_a23d76f361e5e9ff66c49db8b11798239}{zip\+F\+::read\+Book}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Reads a text file and extracts only alphabetic characters. Non-\/alphabetic characters are replaced with spaces. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{namespacezip_f_a3e948b8730a57a51bb29eee0d1c46231}{zip\+F\+::compute\+Word\+Frequency}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Counts how often each word appears in the text. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacezip_f_a7cceebdfbad9c5633de1054f92cbcbb5}{zip\+F\+::count\+Unique\+Words}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Counts the number of unique words in text. \end{DoxyCompactList}\item 
+std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \mbox{\hyperlink{namespacezip_f_a2b23347e83d0c110f8b0c720c4832405}{zip\+F\+::sort\+Frequencies}} (const std\+::map$<$ std\+::string, int $>$ \&frequencies)
+\begin{DoxyCompactList}\small\item\em Sorts words by their frequency, from most to least frequent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f_a19015b3670ffda24078224fbb835cb25}{zip\+F\+::output\+Frequencies}} (const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&sorted\+Freq, const std\+::string \&output\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Writes the sorted frequencies to a file in "{}rank freq word"{} format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f_aeca28206be07d18f31d2825d1cbabd56}{zip\+F\+::plot\+Frequencies}} (const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&sorted\+Freq)
+\begin{DoxyCompactList}\small\item\em Prints words that occur only once (hapax legomena) in the sorted frequency list. \end{DoxyCompactList}\end{DoxyCompactItemize}

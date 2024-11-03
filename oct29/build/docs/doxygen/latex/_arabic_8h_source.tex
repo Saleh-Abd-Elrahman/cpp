@@ -1,0 +1,40 @@
+\doxysection{Arabic.\+h}
+\hypertarget{_arabic_8h_source}{}\label{_arabic_8h_source}\index{/Users/salehabdelrahman/Desktop/oct29/include/Arabic.h@{/Users/salehabdelrahman/Desktop/oct29/include/Arabic.h}}
+\mbox{\hyperlink{_arabic_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ARABIC\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ARABIC\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <locale>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <codecvt>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacearabic}{arabic}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacearabic_a50889a2d84a5c057e2bf6ddae28b0336}{setupLocale}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacearabic_a210b46af1b538d82819ebb328c8ff247}{isArabicAlphabet}}(\textcolor{keywordtype}{wchar\_t}\ ch);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00039\ std::vector<wchar\_t>\ \mbox{\hyperlink{namespacearabic_ad75d43a508128cf3eb7773d1aafe8f1d}{readBook}}(\textcolor{keyword}{const}\ std::string\&\ fileName);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ std::map<std::wstring,\ int>\ \mbox{\hyperlink{namespacearabic_a5b54cad27f1d77cd8d5ff625995699c5}{computeWordFrequency}}(\textcolor{keyword}{const}\ std::vector<wchar\_t>\&\ book);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacearabic_a92e5bccfce1e161adee7e0f5e9d583d6}{countUniqueWords}}(\textcolor{keyword}{const}\ std::vector<wchar\_t>\&\ book);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ std::multimap<int,\ std::wstring>\ \mbox{\hyperlink{namespacearabic_abe1d7f6588a1fcf31a68cbca5e7a6d4a}{sortFrequencies}}(\textcolor{keyword}{const}\ std::map<std::wstring,\ int>\&\ frequencies);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacearabic_a97e992427ae79dc74f0a5c7ce8cb95f2}{exportFrequenciesToFile}}(\textcolor{keyword}{const}\ std::multimap<int,\ std::wstring>\&\ sortedFreq,\ \textcolor{keyword}{const}\ std::string\&\ outputFileName);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacearabic_a343959a2c47a8bcb2a27a8b268722911}{printHapaxLegomena}}(\textcolor{keyword}{const}\ std::multimap<int,\ std::wstring>\&\ sortedFreq);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \}\ \textcolor{comment}{//\ namespace\ arabic}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ARABIC\_H}}
+
+\end{DoxyCode}

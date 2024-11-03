@@ -1,0 +1,45 @@
+\doxysection{/\+Users/salehabdelrahman/\+Desktop/oct29/homework/\+Zip\+F\+\_\+\+Law\+\_\+2.cpp File Reference}
+\hypertarget{_zip_f___law__2_8cpp}{}\label{_zip_f___law__2_8cpp}\index{/Users/salehabdelrahman/Desktop/oct29/homework/ZipF\_Law\_2.cpp@{/Users/salehabdelrahman/Desktop/oct29/homework/ZipF\_Law\_2.cpp}}
+{\ttfamily \#include "{}../include/\+Zip\+F\+\_\+2.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacezip_f2}{zip\+F2}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ char $>$ \mbox{\hyperlink{namespacezip_f2_abc94079ce057300086df7f863e6997c7}{zip\+F2\+::read\+Book}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Reads a book from a file and returns a vector of processed characters. Only alphabetic characters are retained (converted to lowercase). Non-\/alphabetic characters are replaced with spaces. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \mbox{\hyperlink{namespacezip_f2_a9a86b9db23f51344887015a4cc7fc2fd}{zip\+F2\+::compute\+Word\+Frequency}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Computes word frequencies from the processed book content. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacezip_f2_a7ffd650e712947c71e133bfc0ae20fad}{zip\+F2\+::count\+Unique\+Words}} (const std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \&word\+Frequency)
+\item 
+void \mbox{\hyperlink{namespacezip_f2_a897ba10ab2ba0c3d72a117780a06bb88}{zip\+F2\+::write\+Frequencies\+To\+File}} (const std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \&sorted\+Frequencies, const std\+::string \&output\+File)
+\item 
+void \mbox{\hyperlink{namespacezip_f2_a675c449582b47b56af16c555ac68c55e}{zip\+F2\+::print\+Hapax\+Legomena}} (const std\+::vector$<$ \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{Word\+Frequency}} $>$ \&sorted\+Freq)
+\begin{DoxyCompactList}\small\item\em Prints the hapax legomena (words that appear only once). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_zip_f___law__2_8cpp_ad55854f30a7968e9cedd28ffa498da08}{plot\+Frequencies}} (const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&sorted\+Freq)
+\item 
+int \mbox{\hyperlink{_zip_f___law__2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_zip_f___law__2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_zip_f___law__2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{ZipF\_Law\_2.cpp@{ZipF\_Law\_2.cpp}!main@{main}}
+\index{main@{main}!ZipF\_Law\_2.cpp@{ZipF\_Law\_2.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_zip_f___law__2_8cpp_ad55854f30a7968e9cedd28ffa498da08}\label{_zip_f___law__2_8cpp_ad55854f30a7968e9cedd28ffa498da08} 
+\index{ZipF\_Law\_2.cpp@{ZipF\_Law\_2.cpp}!plotFrequencies@{plotFrequencies}}
+\index{plotFrequencies@{plotFrequencies}!ZipF\_Law\_2.cpp@{ZipF\_Law\_2.cpp}}
+\doxysubsubsection{\texorpdfstring{plotFrequencies()}{plotFrequencies()}}
+{\footnotesize\ttfamily void plot\+Frequencies (\begin{DoxyParamCaption}\item[{const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&}]{sorted\+Freq }\end{DoxyParamCaption})}
+

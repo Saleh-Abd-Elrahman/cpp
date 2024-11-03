@@ -1,0 +1,145 @@
+\doxysection{zipF Namespace Reference}
+\hypertarget{namespacezip_f}{}\label{namespacezip_f}\index{zipF@{zipF}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ char $>$ \mbox{\hyperlink{namespacezip_f_a23d76f361e5e9ff66c49db8b11798239}{read\+Book}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Reads a text file and extracts only alphabetic characters. Non-\/alphabetic characters are replaced with spaces. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{namespacezip_f_a3e948b8730a57a51bb29eee0d1c46231}{compute\+Word\+Frequency}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Counts how often each word appears in the text. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacezip_f_a7cceebdfbad9c5633de1054f92cbcbb5}{count\+Unique\+Words}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Counts the number of unique words in text. \end{DoxyCompactList}\item 
+std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \mbox{\hyperlink{namespacezip_f_a2b23347e83d0c110f8b0c720c4832405}{sort\+Frequencies}} (const std\+::map$<$ std\+::string, int $>$ \&frequencies)
+\begin{DoxyCompactList}\small\item\em Sorts words by their frequency, from most to least frequent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f_a19015b3670ffda24078224fbb835cb25}{output\+Frequencies}} (const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&sorted\+Freq, const std\+::string \&output\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Writes the sorted frequencies to a file in "{}rank freq word"{} format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f_aeca28206be07d18f31d2825d1cbabd56}{plot\+Frequencies}} (const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&sorted\+Freq)
+\begin{DoxyCompactList}\small\item\em Prints words that occur only once (hapax legomena) in the sorted frequency list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f_a17b6d4f2b1e29746390b0f97b7ada6f5}{print\+Hapax\+Legomena}} (const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&sorted\+Freq)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacezip_f_a3e948b8730a57a51bb29eee0d1c46231}\label{namespacezip_f_a3e948b8730a57a51bb29eee0d1c46231} 
+\index{zipF@{zipF}!computeWordFrequency@{computeWordFrequency}}
+\index{computeWordFrequency@{computeWordFrequency}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{computeWordFrequency()}{computeWordFrequency()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, int $>$ zip\+F\+::compute\+Word\+Frequency (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ char $>$ \&}]{book }\end{DoxyParamCaption})}
+
+
+
+Counts how often each word appears in the text. 
+
+
+\begin{DoxyItemize}
+\item It splits the content into words based on spaces.
+\item Then it counts how many times each word appears in the text. 
+\begin{DoxyParams}{Parameters}
+{\em book} & Vector of characters representing the book content. (letters only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map with words as keys and their frequencies as values. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\Hypertarget{namespacezip_f_a7cceebdfbad9c5633de1054f92cbcbb5}\label{namespacezip_f_a7cceebdfbad9c5633de1054f92cbcbb5} 
+\index{zipF@{zipF}!countUniqueWords@{countUniqueWords}}
+\index{countUniqueWords@{countUniqueWords}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{countUniqueWords()}{countUniqueWords()}}
+{\footnotesize\ttfamily int zip\+F\+::count\+Unique\+Words (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ char $>$ \&}]{book }\end{DoxyParamCaption})}
+
+
+
+Counts the number of unique words in text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em book} & Vector of characters representing the book content. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total count of unique words in the book. 
+\end{DoxyReturn}
+\Hypertarget{namespacezip_f_a19015b3670ffda24078224fbb835cb25}\label{namespacezip_f_a19015b3670ffda24078224fbb835cb25} 
+\index{zipF@{zipF}!outputFrequencies@{outputFrequencies}}
+\index{outputFrequencies@{outputFrequencies}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{outputFrequencies()}{outputFrequencies()}}
+{\footnotesize\ttfamily void zip\+F\+::output\+Frequencies (\begin{DoxyParamCaption}\item[{const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&}]{sorted\+Freq,  }\item[{const std\+::string \&}]{output\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Writes the sorted frequencies to a file in "{}rank freq word"{} format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sorted\+Frequencies} & A sorted multimap with words and their frequencies, from most to least frequent. \\
+\hline
+{\em output\+File} & Name of the output file to save. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacezip_f_aeca28206be07d18f31d2825d1cbabd56}\label{namespacezip_f_aeca28206be07d18f31d2825d1cbabd56} 
+\index{zipF@{zipF}!plotFrequencies@{plotFrequencies}}
+\index{plotFrequencies@{plotFrequencies}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{plotFrequencies()}{plotFrequencies()}}
+{\footnotesize\ttfamily void zip\+F\+::plot\+Frequencies (\begin{DoxyParamCaption}\item[{const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&}]{sorted\+Freq }\end{DoxyParamCaption})}
+
+
+
+Prints words that occur only once (hapax legomena) in the sorted frequency list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sorted\+Frequencies} & A sorted multimap with words and their frequencies. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacezip_f_a17b6d4f2b1e29746390b0f97b7ada6f5}\label{namespacezip_f_a17b6d4f2b1e29746390b0f97b7ada6f5} 
+\index{zipF@{zipF}!printHapaxLegomena@{printHapaxLegomena}}
+\index{printHapaxLegomena@{printHapaxLegomena}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{printHapaxLegomena()}{printHapaxLegomena()}}
+{\footnotesize\ttfamily void zip\+F\+::print\+Hapax\+Legomena (\begin{DoxyParamCaption}\item[{const std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ \&}]{sorted\+Freq }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacezip_f_a23d76f361e5e9ff66c49db8b11798239}\label{namespacezip_f_a23d76f361e5e9ff66c49db8b11798239} 
+\index{zipF@{zipF}!readBook@{readBook}}
+\index{readBook@{readBook}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{readBook()}{readBook()}}
+{\footnotesize\ttfamily std\+::vector$<$ char $>$ zip\+F\+::read\+Book (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Reads a text file and extracts only alphabetic characters. Non-\/alphabetic characters are replaced with spaces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Name of the text file to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of alphabetic characters from the file with only letters kept. 
+\end{DoxyReturn}
+\Hypertarget{namespacezip_f_a2b23347e83d0c110f8b0c720c4832405}\label{namespacezip_f_a2b23347e83d0c110f8b0c720c4832405} 
+\index{zipF@{zipF}!sortFrequencies@{sortFrequencies}}
+\index{sortFrequencies@{sortFrequencies}!zipF@{zipF}}
+\doxysubsubsection{\texorpdfstring{sortFrequencies()}{sortFrequencies()}}
+{\footnotesize\ttfamily std\+::multimap$<$ int, std\+::string, std\+::greater$<$$>$ $>$ zip\+F\+::sort\+Frequencies (\begin{DoxyParamCaption}\item[{const std\+::map$<$ std\+::string, int $>$ \&}]{frequencies }\end{DoxyParamCaption})}
+
+
+
+Sorts words by their frequency, from most to least frequent. 
+
+
+\begin{DoxyItemize}
+\item This function takes in a map of words (keys) and their frequencies (values).
+\end{DoxyItemize}
+
+It creates a new sorted list of words, organized by frequency in descending order.
+\begin{DoxyItemize}
+\item Words with the same frequency are grouped together. 
+\begin{DoxyParams}{Parameters}
+{\em frequencies} & Map of words and their corresponding frequencies. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Multimap with frequencies as keys and words as values. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}

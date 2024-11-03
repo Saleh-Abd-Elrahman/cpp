@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacezip_f2" kind="namespace" language="C++">
+    <compoundname>zipF2</compoundname>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacezip_f2_1a4b9f66a47c007f99678ed30fab6daa67" prot="public" static="no">
+        <type>std::pair&lt; std::string, int &gt;</type>
+        <definition>using zipF2::WordFrequency =  std::pair&lt;std::string, int&gt;</definition>
+        <argsstring></argsstring>
+        <name>WordFrequency</name>
+        <qualifiedname>zipF2::WordFrequency</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" line="18" column="1" bodyfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacezip_f2_1abc94079ce057300086df7f863e6997c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt; char &gt; zipF2::readBook</definition>
+        <argsstring>(const std::string &amp;fileName)</argsstring>
+        <name>readBook</name>
+        <qualifiedname>zipF2::readBook</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Reads a book from a file and returns a vector of processed characters. Only alphabetic characters are retained (converted to lowercase). Non-alphabetic characters are replaced with spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the input text file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;char&gt; Processed characters from the book. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" line="11" column="13" bodyfile="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" bodystart="11" bodyend="26" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="28" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a9a86b9db23f51344887015a4cc7fc2fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; std::string, int &gt; &gt;</type>
+        <definition>std::vector&lt; WordFrequency &gt; zipF2::computeWordFrequency</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;book)</argsstring>
+        <name>computeWordFrequency</name>
+        <qualifiedname>zipF2::computeWordFrequency</qualifiedname>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>book</declname>
+        </param>
+        <briefdescription>
+<para>Computes word frequencies from the processed book content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>book</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of processed characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;WordFrequency&gt; Vector of word-frequency pairs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" line="29" column="13" bodyfile="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" bodystart="29" bodyend="58" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="36" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a7ffd650e712947c71e133bfc0ae20fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int zipF2::countUniqueWords</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; std::string, int &gt; &gt; &amp;wordFrequency)</argsstring>
+        <name>countUniqueWords</name>
+        <qualifiedname>zipF2::countUniqueWords</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; std::string, int &gt; &gt; &amp;</type>
+          <declname>wordFrequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" line="61" column="5" bodyfile="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a897ba10ab2ba0c3d72a117780a06bb88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zipF2::writeFrequenciesToFile</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; std::string, int &gt; &gt; &amp;sortedFrequencies, const std::string &amp;outputFile)</argsstring>
+        <name>writeFrequenciesToFile</name>
+        <qualifiedname>zipF2::writeFrequenciesToFile</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; std::string, int &gt; &gt; &amp;</type>
+          <declname>sortedFrequencies</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>outputFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" line="66" column="6" bodyfile="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a675c449582b47b56af16c555ac68c55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zipF2::printHapaxLegomena</definition>
+        <argsstring>(const std::vector&lt; WordFrequency &gt; &amp;sortedFreq)</argsstring>
+        <name>printHapaxLegomena</name>
+        <qualifiedname>zipF2::printHapaxLegomena</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacezip_f2_1a4b9f66a47c007f99678ed30fab6daa67" kindref="member">WordFrequency</ref> &gt; &amp;</type>
+          <declname>sortedFreq</declname>
+          <defname>sortedFrequencies</defname>
+        </param>
+        <briefdescription>
+<para>Prints the hapax legomena (words that appear only once). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sortedFreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorted vector of word-frequency pairs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" line="77" column="6" bodyfile="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" bodystart="77" bodyend="90" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a5c8ca2a3bbcec43731a4f4c9babd4758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int zipF2::countUniqueWords</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;book)</argsstring>
+        <name>countUniqueWords</name>
+        <qualifiedname>zipF2::countUniqueWords</qualifiedname>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>book</declname>
+        </param>
+        <briefdescription>
+<para>Counts the number of unique words in the book. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>book</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of processed characters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of unique words. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" line="44" column="5" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="44" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a1d188f317dc2dd50575b4e3b384db8e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacezip_f2_1a4b9f66a47c007f99678ed30fab6daa67" kindref="member">WordFrequency</ref> &gt;</type>
+        <definition>std::vector&lt; WordFrequency &gt; zipF2::sortFrequencies</definition>
+        <argsstring>(std::vector&lt; WordFrequency &gt; &amp;frequencies)</argsstring>
+        <name>sortFrequencies</name>
+        <qualifiedname>zipF2::sortFrequencies</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacezip_f2_1a4b9f66a47c007f99678ed30fab6daa67" kindref="member">WordFrequency</ref> &gt; &amp;</type>
+          <declname>frequencies</declname>
+        </param>
+        <briefdescription>
+<para>Sorts word frequencies in decreasing order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frequencies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of word-frequency pairs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;WordFrequency&gt; Sorted vector of word-frequency pairs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" line="52" column="13" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="52" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1afd7b1486e278072a0b2082811ceab308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zipF2::outputFrequencies</definition>
+        <argsstring>(const std::vector&lt; WordFrequency &gt; &amp;sortedFreq, const std::string &amp;outputFileName)</argsstring>
+        <name>outputFrequencies</name>
+        <qualifiedname>zipF2::outputFrequencies</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacezip_f2_1a4b9f66a47c007f99678ed30fab6daa67" kindref="member">WordFrequency</ref> &gt; &amp;</type>
+          <declname>sortedFreq</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>outputFileName</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the sorted word frequencies to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sortedFreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorted vector of word-frequency pairs. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outputFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the output file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" line="60" column="6" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacezip_f2_1a0918d144054c28ce4ebe3d1a0af6748c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zipF2::plotFrequencies</definition>
+        <argsstring>(const std::vector&lt; WordFrequency &gt; &amp;sortedFreq)</argsstring>
+        <name>plotFrequencies</name>
+        <qualifiedname>zipF2::plotFrequencies</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacezip_f2_1a4b9f66a47c007f99678ed30fab6daa67" kindref="member">WordFrequency</ref> &gt; &amp;</type>
+          <declname>sortedFreq</declname>
+        </param>
+        <briefdescription>
+<para>Plots the word frequency distribution on a log-log scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sortedFreq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorted vector of word-frequency pairs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" line="67" column="6" declfile="/Users/salehabdelrahman/Desktop/oct29/include/ZipF_2.h" declline="67" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/salehabdelrahman/Desktop/oct29/homework/ZipF_Law_2.cpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

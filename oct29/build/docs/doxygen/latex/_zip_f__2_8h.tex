@@ -1,0 +1,39 @@
+\doxysection{/\+Users/salehabdelrahman/\+Desktop/oct29/include/\+Zip\+F\+\_\+2.h File Reference}
+\hypertarget{_zip_f__2_8h}{}\label{_zip_f__2_8h}\index{/Users/salehabdelrahman/Desktop/oct29/include/ZipF\_2.h@{/Users/salehabdelrahman/Desktop/oct29/include/ZipF\_2.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$matplot/matplot.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacezip_f2}{zip\+F2}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{zip\+F2\+::\+Word\+Frequency}} = std\+::pair$<$std\+::string, int$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ char $>$ \mbox{\hyperlink{namespacezip_f2_abc94079ce057300086df7f863e6997c7}{zip\+F2\+::read\+Book}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Reads a book from a file and returns a vector of processed characters. Only alphabetic characters are retained (converted to lowercase). Non-\/alphabetic characters are replaced with spaces. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \mbox{\hyperlink{namespacezip_f2_a9a86b9db23f51344887015a4cc7fc2fd}{zip\+F2\+::compute\+Word\+Frequency}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Computes word frequencies from the processed book content. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacezip_f2_a5c8ca2a3bbcec43731a4f4c9babd4758}{zip\+F2\+::count\+Unique\+Words}} (const std\+::vector$<$ char $>$ \&book)
+\begin{DoxyCompactList}\small\item\em Counts the number of unique words in the book. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{Word\+Frequency}} $>$ \mbox{\hyperlink{namespacezip_f2_a1d188f317dc2dd50575b4e3b384db8e1}{zip\+F2\+::sort\+Frequencies}} (std\+::vector$<$ \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{Word\+Frequency}} $>$ \&frequencies)
+\begin{DoxyCompactList}\small\item\em Sorts word frequencies in decreasing order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f2_afd7b1486e278072a0b2082811ceab308}{zip\+F2\+::output\+Frequencies}} (const std\+::vector$<$ \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{Word\+Frequency}} $>$ \&sorted\+Freq, const std\+::string \&output\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Outputs the sorted word frequencies to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f2_a0918d144054c28ce4ebe3d1a0af6748c}{zip\+F2\+::plot\+Frequencies}} (const std\+::vector$<$ \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{Word\+Frequency}} $>$ \&sorted\+Freq)
+\begin{DoxyCompactList}\small\item\em Plots the word frequency distribution on a log-\/log scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacezip_f2_a675c449582b47b56af16c555ac68c55e}{zip\+F2\+::print\+Hapax\+Legomena}} (const std\+::vector$<$ \mbox{\hyperlink{namespacezip_f2_a4b9f66a47c007f99678ed30fab6daa67}{Word\+Frequency}} $>$ \&sorted\+Freq)
+\begin{DoxyCompactList}\small\item\em Prints the hapax legomena (words that appear only once). \end{DoxyCompactList}\end{DoxyCompactItemize}
